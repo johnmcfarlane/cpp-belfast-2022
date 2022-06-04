@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Contractual Disappointment in C++ - ACCU 2022</title>
+  <title>Contractual Disappointment in C++ - Cpp &lt;Belfast&gt;> 2022</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="dist/reset.css">
@@ -21,13 +21,18 @@
   <div class="reveal">
     <div class="slides">
 
-      <section data-transition="fade-out" data-background="Contractual Disappointment in C++ copy.png">
+      <section data-transition="fade-in convex-out">
+        <h3>2022-06-06</h3>
+        <h1>C++ &lt;Belfast&gt;</h1>
+        <h2>Contractual Disappointment in C++</h2>
+        <p><a
+            href="https://www.meetup.com/cpp-belfast/events/285738429/">www.meetup.com/cpp-belfast/events/285738429</a>
       </section>
 
-      <section data-transition="fade-in slide-out">
+      <section data-transition="convex-in slide-out">
         <h3>About Me</h3>
         <p class="fragment">John McFarlane</p>
-        <p class="fragment">Software Engineer, Jaguar Land Rover, Shannon, Co Clare, Ireland</p>
+        <p class="fragment">Software Engineer, Ennis, Co Clare</p>
         <p class="fragment">
           <img width="80" src="Octocat.png" alt="GitHub logo" />
           <a href="https://github.com/johnmcfarlane/accu-2022-examples/">github.com/johnmcfarlane/accu-2022-examples</a>
@@ -37,10 +42,11 @@
           <a href="https://twitter.com/JSAMcFarlane">twitter.com/JSAMcFarlane</a>
         </p>
         <p>&nbsp;</p>
-        <a class="fragment" href="https://johnmcfarlane.github.io/accu-2022">johnmcfarlane.github.io/accu-2022</a>
+        <a class="fragment"
+          href="https://johnmcfarlane.github.io/cpp-belfast-2022">johnmcfarlane.github.io/cpp-belfast-2022</a>
       </section>
 
-      <section data-transition="slide-in slide-out">
+      <section data-transition="slide-in convex-out">
         <h3>Background</h3>
         <p>
           <span class="fragment">Work:</span>
@@ -65,76 +71,6 @@
           <p>note: title was chosen before decision not to proceed with contracts for C++23!</p>
         </aside>
       </section>
-
-      <!-- <section data-transition="slide-in convex-out">
-        <h3>Warning: Opinions Ahead</h3>
-        <ul>
-          <li>This talk isn't about standardisation of a C++ contracts language feature,
-          its absence from C++23,
-          nor any disappointment that absence has caused.</li>
-          <li>The speaker apologises for any disappointed caused by this lack of disappointment.</li>
-      </section> -->
-
-      <!-- <section data-transition="convex-in slide-out">
-				<h3>This talk...</h3>
-				<div style="display: flex">
-					<div style="flex: 48%">
-						<h3 class="fragment">not about</h3>
-						<ul>
-							<li class="fragment">the C++ contracts feature</li>
-							<li class="fragment">everything you need to know to code better</li>
-							<li class="fragment">"safety-critical" or "safe" code</li>
-							<li class="fragment">which languages, tools and techniques are best</li>
-							<li class="fragment">salvaging a legacy project full of bugs and complexity</li>
-						</ul>
-					</div>
-					<div style="flex: 4%">
-					</div>
-					<div style="flex: 48%">
-						<h3 class="fragment">is about</h3>
-						<ul>
-							<li class="fragment">C++ contracts in general</li>
-							<li class="fragment">some thoughts and advice on how to code better</li>
-							<li class="fragment">correctness, productivity</li>
-							<li class="fragment">how languages, tools and techniques could be improved</li>
-							<li class="fragment">aiming for an attainable level of quality and simplicity</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section data-transition="slide-in convex-out">
-				<h3>This talk...</h3>
-				<div style="display: flex">
-					<div style="flex: 48%">
-						<h3 class="fragment">won't tell you to</h3>
-						<ul>
-							<li class="fragment">write simple code</li>
-							<li class="fragment">run many static analysis tools</li>
-							<li class="fragment">enable compiler warnings</li>
-							<li class="fragment">turn warnings into errors</li>
-							<li class="fragment">adopt modern standards</li>
-							<li class="fragment">enforce those coding standard</li>
-							<li class="fragment">fix <em>all</em> issues raised</li>
-						</ul>
-					</div>
-					<div style="flex: 4%">
-					</div>
-					<div style="flex: 48%">
-						<h3 class="fragment">will tell you to</h3>
-						<ul>
-							<li class="fragment">write correct code</li>
-							<li class="fragment">run dynamic analysis tools</li>
-							<li class="fragment">enable run-time checks</li>
-							<li class="fragment">trap bugs</li>
-							<li class="fragment">write good automated tests</li>
-							<li class="fragment">measure the coverage of tests</li>
-							<li class="fragment">fix <em>all</em> issues raised</li>
-						</ul>
-					</div>
-				</div>
-				<p class="fragment">But do it all!!</p>
-			</section> -->
 
       <section data-transition="convex-in slide-out">
         <h1>Definitions</h1>
@@ -161,7 +97,7 @@
         </blockquote>
       </section>
 
-      <section data-transition="slide-in slide-out">
+      <section data-transition="slide-in convex-out">
         <h3>Bugs and Errors</h3>
         <p><a href="https://wg21.link/p709r2">P0709R2: Zero-overhead deterministic exceptions: Throwing
             values</a></p>
@@ -441,7 +377,7 @@
         <aside class="notes">single most important cell</aside>
       </section>
 
-      <section data-transition="none-in slide-out">
+      <section data-transition="none-in convex-out">
         <h3>Contract Attributes</h3>
         <table>
           <thead>
@@ -598,7 +534,7 @@
         </div>
       </section>
 
-      <section data-transition="slide-in slide-out">
+      <section data-transition="convex-in slide-out">
         <h3>Error Handling</h3>
         <ul>
           <li class="fragment">
@@ -1168,7 +1104,7 @@ int main(int argc, char* argv[])
           class bitset {
           public:
             bool get(std::size_t index) const {
-              if (index &lt;= capacity()) {
+              if (index &gt;= size()) {
                 resize(index);
               }
             ...
@@ -1233,7 +1169,7 @@ int main(int argc, char* argv[])
         <aside class="notes">So there's an example of a C++ API Contract violation.</aside>
       </section>
 
-      <section data-transition="fade-in slide-out">
+      <section data-transition="fade-in convex-out">
         <h3>Contract Attributes</h3>
         <table>
           <thead>
@@ -1299,7 +1235,7 @@ int main(int argc, char* argv[])
         <p>Prominent C++ Standard contract violation bugs fall into two main categories</p>
         <div style="display: flex">
           <div style="flex: 48%">
-            <h3 class="fragment">integer arithmetic</h3>
+            <h3 class="fragment">arithmetic</h3>
             <ul>
               <li class="fragment">divide-by-zero</li>
               <li class="fragment">overflow</li>
@@ -1348,16 +1284,26 @@ int main(int argc, char* argv[])
 
       <section data-transition="slide-in slide-out">
         <h3>Shift Left</h3>
+        <span style="text-align: left">🡠 early/cheap</span> --- detection --- <span style="text-align: right">late/expensive 🡢</p>
         <ul>
-          <li class="fragment">Preventing bugs in users' programs is essential.</li>
-          <li class="fragment">Intercept them as early as possible.
-            <ol>
-              <li class="fragment">Bug-hostile APIs, languages and tools make the bug inconceivable.</li>
-              <li class="fragment">Compilers, linters and static analysers can flag potential bugs.</li>
-              <li class="fragment">Instrumentation detects bugs in executing code.</li>
-              <li class="fragment">Automated testing exercises the code.</li>
-              <li class="fragment">Fuzz testing and coverage metrics guide testing.</li>
-            </ol>
+          <li class="fragment">Bug-hostile APIs, languages and tools make the bug inconceivable.</li>
+          <ul>
+            <li class="fragment">Compilers, linters and static analysers can flag <span
+                style="text-decoration: underline wavy red">potential bugs</span>.</li>
+            <ul>
+              <div class="fragment">⬇ Instrumentation detects bugs in executing code.</div>
+              <div class="fragment">⬇ Fuzz testing and coverage metrics guide testing.</div>
+              <li class="fragment">
+                Automated testing exercises the code.
+              </li>
+              <ul>
+                <li class="fragment">Bugs found by human testers are more costly.</li>
+                <ul>
+                  <li class="fragment">Bugs found by users/customers are most costly.</li>
+                </ul>
+                </ul>
+            </ul>
+          </ul>
           </li>
         </ul>
       </section>
@@ -1373,7 +1319,7 @@ int main(int argc, char* argv[])
         </div>
       </section>
 
-      <section data-transition="slide-in fade-out">
+      <section data-transition="slide-in slide-out">
         <h3>Testing with Sanitizers is Left of Bug Reports</h3>
         <pre data-id="code-animation"><code class="cpp"
 					data-trim data-line-numbers="3-5|3|4|5">
@@ -1383,34 +1329,16 @@ int main(int argc, char* argv[])
               v.push_back(2);
               fmt::print("{}\n", v[3]);
           }</code></pre>
-        <p class="fragment">libstdc++: <em>-D_GLIBCXX_ASSERTIONS</em></p>
-        <p class="fragment">MSVC: <em>/D_ITERATOR_DEBUG_LEVEL=1</em>?</p>
+        <p class="fragment"><a href="https://godbolt.org/z/sTrPT6hbo">
+            libc++: <em>-D_LIBCPP_DEBUG</em>
+          </a></p>
+        <p class="fragment"><a href="https://godbolt.org/z/bzdEj9ohh">
+            libstdc++: <em>-D_GLIBCXX_ASSERTIONS</em>
+          </a></p>
+        <p class="fragment"><a href="https://godbolt.org/z/zq8M61P5P">
+            MSVC: <em>/D_ITERATOR_DEBUG_LEVEL=1</em>
+          </a></p>
       </section>
-
-      <section data-transition="fade-in slide-out">
-        <h3>A Funny Thing Happened on the Way to the Repository</h3>
-        <pre data-id="code-animation"><code class="cpp"
-					data-trim data-line-numbers="14-16|1-6|10|10-12|11">
-          // from https://discourse.cmake.org/t/tests-that-are-meant-to-abort/537/4
-          // This is a hack to implement death tests in CTest.
-          extern "C" void error_test_handle_abort(int /*unused*/)
-          {
-              std::exit(EXIT_FAILURE);  // NOLINT(concurrency-mt-unsafe)
-          }
-
-          int main()
-          {
-              if (std::signal(SIGABRT, error_test_handle_abort) == SIG_ERR) {
-                  std::abort();
-              }
-
-              auto v{std::vector{0, 1}};
-              v.push_back(2);
-              fmt::print("{}\n", v[3]);
-          }</code></pre>
-        <p class="fragment">death tests are hard</p>
-      </section>
-
 
 
       <section data-transition="slide-in fade-out">
@@ -1509,65 +1437,19 @@ int main(int argc, char* argv[])
         <h1>Test User Contract</h1>
       </section>
 
-      <section data-transition="slide-in fade-out">
-        <h3>Contract Attributes</h3>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th class="implicit">C++ API</th>
-              <th class="implicit">standard</th>
-              <th class="implicit">end user</th>
-              <th>test user</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="implicit">agreement</td>
-              <td class="implicit">docs</td>
-              <td class="implicit">ISO/IEC 14882</td>
-              <td class="implicit">docs</td>
-              <td>docs</td>
-            </tr>
-            <tr>
-              <td class="implicit">client</td>
-              <td class="implicit">dev</td>
-              <td class="implicit">dev</td>
-              <td class="implicit">user</td>
-              <td>dev</td>
-            </tr>
-            <tr>
-              <td class="implicit">provider</td>
-              <td class="implicit">dev</td>
-              <td class="implicit">implementer</td>
-              <td class="implicit">dev</td>
-              <td>implementer</td>
-            </tr>
-            <tr>
-              <td class="implicit">violation</td>
-              <td class="implicit">bug</td>
-              <td class="implicit">bug</td>
-              <td class="implicit">error</td>
-              <td>error</td>
-            </tr>
-          </tbody>
-        </table>
-        <aside class="notes">This stuff is weird.</aside>
-      </section>
-
-      <section data-transition="slide-in convex-out">
+      <section data-transition="slide-in slide-out">
         <h3>The Test User Contract</h3>
         <ul>
-          <li class="fragment">The exchange of promises between C++ developers and C++ tools providers.</li>
-          <li class="fragment">Provision is considered a nice-to-have, a 'quality of implementation' issue`.</li>
+          <li class="fragment">An exchange of promises between C++ developers and C++ tools providers.</li>
+          <li class="fragment">Authors are implementers, no the committee.</li>
           <li class="fragment">Client violations are <del>bugs</del> <em>errors</em>.</li>
           <li class="fragment">These errors arise at the point where a bug is discovered.</li>
           <li class="fragment">The user is a dev in need of feedback about correctness.</li>
-          <li class="fragment">One such tool is a good <code>assert</code>.</li>
+          <li class="fragment">One such tool is <code>assert</code>.</li>
         </ul>
       </section>
 
-      <section data-transition="slide-in fade-out">
+      <section data-transition="slide-in slide-out">
         <h3>Trigger Warning: This Assertion Triggers UB!</h3>
         <pre data-id="code-animation"><code class="cpp"
 					data-trim data-line-numbers="1-3|5-7|9-12|14-16">
@@ -1596,7 +1478,7 @@ int main(int argc, char* argv[])
 </code></pre>
       </section>
 
-      <section data-transition="slide-in convex-out">
+      <section data-transition="slide-in slide-out">
         <h3>Simplicity, Uniformity, Versatility</h3>
         <ul>
           <li class="fragment">The choice of how to handle bugs lies in the hands of the developer using the code.</li>
@@ -1612,7 +1494,7 @@ int main(int argc, char* argv[])
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h3>Bugs is Bugs</h3>
+        <h3>Bugs are Bugs</h3>
         <pre data-id="code-animation"><code class="cpp"
 					data-trim data-line-numbers="2-5|4|7-8">
           // precondition: number is in range [1..26]
@@ -1625,8 +1507,8 @@ int main(int argc, char* argv[])
           number_to_letter(0x7fffffff);</code></pre>
       </section>
 
-      <section data-transition="slide-in fade-out">
-        <h3>Contracts Protect Interests</h3>
+      <section data-transition="fade-in slide-out">
+        <h3>Contracts Protect Implementation Freedom</h3>
         <pre data-id="code-animation"><code class="cpp"
 					data-trim data-line-numbers="2-5|4">
           constexpr auto number_to_letter(int number)
@@ -1675,43 +1557,6 @@ int main(int argc, char* argv[])
         </ul>
       </section>
 
-      <section data-transition="slide-in fade-out">
-        <h3>Testing Isn't Debugging</h3>
-        <p>.github/workflows/toolchains/linux-gcc.cmake</p>
-        <pre data-id="code-animation"><code class="cpp"
-					data-trim data-line-numbers="1-2|5-6">
-set(CMAKE_CXX_FLAGS_INIT
-    "-Wall -Werror -Wextra -Wno-maybe-uninitialized -Wno-restrict -pedantic")
-set(CMAKE_CXX_FLAGS_COVERAGE_INIT
-    "-coverage -fno-exceptions -DPID_DISABLE_ASSERTS")
-set(CMAKE_CXX_FLAGS_TEST_INIT
-    "-D_GLIBCXX_ASSERTIONS -DNDEBUG -O3 -fsanitize=address,undefined -fno-sanitize-recover=all")</code></pre>
-      </section>
-
-      <section data-transition="slide-in fade-out">
-        <h3>Testing Isn't Debugging</h3>
-        <p>.github/workflows/toolchains/linux-gcc.cmake</p>
-        <pre style="font-size: 45%" data-id="code-animation"><code class="cpp"
-					data-trim data-line-numbers="|7-12|9|10|3">
-#!/usr/bin/env bash
-
-set -euo pipefail
-
-PROJECT_DIR=$(cd "$(dirname "$0")"/../../..; pwd)
-
-conan install \
-  --build=missing \
-  --env CONAN_CMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/.github/workflows/toolchains/linux-gcc.cmake" \
-  --settings build_type=Test \
-  "${PROJECT_DIR}" \
-  "$@"
-
-conan build \
-  "${PROJECT_DIR}"
-</code></pre>
-      </section>
-
-
       <section data-transition="convex-in slide-out">
         <h1>Discussion</h1>
       </section>
@@ -1757,7 +1602,6 @@ conan build \
       <section data-transition="convex-in slide-out">
         <h3>Thank You</h3>
         <p>John McFarlane</p>
-        <p>Jaguar Land Rover, Shannon, Ireland</p>
         <p>
           <img width="80" src="Octocat.png" alt="GitHub logo" />
           <a href="https://github.com/johnmcfarlane/accu-2022-examples/">github.com/johnmcfarlane/accu-2022-examples</a>
@@ -1767,12 +1611,13 @@ conan build \
           <a href="https://twitter.com/JSAMcFarlane">twitter.com/JSAMcFarlane</a>
         </p>
         <p>&nbsp;</p>
-        <a href="https://johnmcfarlane.github.io/slides/2022-accu">johnmcfarlane.github.io/slides/2022-accu</a>
+        <a href="https://johnmcfarlane.github.io/cpp-belfast-2022/">johnmcfarlane.github.io/cpp-belfast-2022</a>
       </section>
 
 
       <section data-transition="convex-in slide-out">
-        <h1>The Stuff I Didn't Get To</h1>
+        <h1>'Bonus' Material</h1>
+        <h3>Another (maybe) hour of poorly proofed slides</h3>
       </section>
 
 
